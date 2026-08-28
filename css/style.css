@@ -1,0 +1,238 @@
+/* ==========================================================================
+   STYLE STYLESHEET - SYSTEM BASE LAYOUTS, CORE RESET, TYPOGRAPHY
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography Base Structure */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* Layout Utilities Grid & Containers */
+.container {
+    width: 100%;
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-bg-alt {
+    background-color: var(--bg-secondary);
+}
+
+.section-border-top {
+    border-top: 1px solid var(--border-flat);
+}
+
+.text-center { text-align: center; }
+.alignment-center { align-items: center; }
+.text-gold { color: var(--gold-color); }
+.border-radius-sm { border-radius: var(--border-radius-sm); }
+
+.text-gradient {
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Header & Sticky Navigation Design */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(11, 12, 16, 0.05);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--card-border);
+    transition: var(--transition-smooth);
+}
+
+.main-header.scrolled {
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow-premium);
+}
+
+.header-container {
+    max-width: var(--max-width-container);
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-brand {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.logo-dot {
+    color: #3b82f6;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--text-primary);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Section Level Headings */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    letter-spacing: -0.03em;
+}
+
+.section-paragraph {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+}
+
+.section-subtitle-text {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 56px;
+}
+
+/* Footer Section Layout */
+.main-footer-block {
+    background-color: var(--bg-primary);
+    padding: 64px 0 32px 0;
+}
+
+.footer-top-split-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 48px;
+}
+
+.brand-footer-summary-column {
+    max-width: 480px;
+}
+
+.footer-short-summary-para {
+    color: var(--text-muted);
+    margin-top: 16px;
+    font-size: 0.95rem;
+}
+
+.footer-social-networks-link-group {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-bottom-copyright-meta-row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-flat);
+    padding-top: 32px;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+}
+/* ==========================================================================
+   LOGO AVATAR INTEGRATION
+   ========================================================================== */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Smooth spacing between your picture and text */
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.04em;
+}
+
+.logo-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* Makes the image perfectly round */
+    object-fit: cover; /* Prevents stretching or squishing */
+    border: 2px solid #3b82f6; /* Modern interactive border accent */
+    background-color: var(--bg-accent);
+    transition: var(--transition-smooth);
+}
+
+/* Premium micro-interaction on hover */
+.logo-container:hover .logo-avatar {
+    transform: scale(1.08);
+    border-color: #8b5cf6; /* Changes border color smoothly to match the primary gradient */
+}
+
+.logo-dot {
+    color: #3b82f6;
+}

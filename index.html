@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabin Kandel | Portfolio</title>
+    
+    <meta name="description" content="Official digital portfolio of Prabin Kandel - +2 Computer Science Student, National Science Expo Winner, and Technology Enthusiast.">
+    <meta name="keywords" content="Prabin Kandel, Portfolio, Computer Science Student, National Science Expo Winner, WRC 2082, Vector Winner, Frontend Developer, Pokhara, Nepal">
+    <meta name="author" content="Prabin Kandel">
+    <meta property="og:title" content="Prabin Kandel | Digital Portfolio">
+    <meta property="og:description" content="+2 Computer Science Student & National Level Science Expo Winner. Explorer of modern software engineering.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/Prabin369">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Prabin Kandel",
+      "birthDate": "2009-06-25",
+      "jobTitle": "Student",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Shree Siddha Baraha Secondary School"
+      },
+      "award": "Winner of Open Project Demonstration +2 Category, WRC 2082",
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "Computer Science"],
+      "email": "mailto:kandelprabin09@gmail.com",
+      "telephone": "+9779845513093"
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function(){
+         emailjs.init("31XMK4CNmoe9w-OXY"); // ✅ Your Public Key
+      })();
+    </script>
+
+
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    
+</head>
+<body>
+
+    <div id="page-loader" class="page-loader" aria-hidden="true">
+        <div class="loader-spinner"></div>
+    </div>
+    <div id="offline-toast" class="toast-notification hide" role="alert">
+        <i class="fa-solid fa-wifi-slash"></i> <span data-i18n="offline_msg">You are currently offline.</span>
+    </div>
+
+    <div id="scroll-progress" class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+                <a href="#" class="logo-container">
+                <img src="img/66.jpg" alt="Prabin Kandel Avatar" class="logo-avatar">
+                
+            </a>
+            <a href="#hero" class="logo-brand" aria-label="Prabin Kandel Home">
+                <span class="logo-text">Prabin Kandel<span class="logo-dot">.</span></span>
+            </a>
+
+
+
+            
+            <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">About</a></li>
+                    <li><a href="#education" class="nav-link" data-i18n="nav_education">Education</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Skills</a></li>
+                    <li><a href="#expo" class="nav-link" data-i18n="nav_expo">Science Expo</a></li>
+                    <li><a href="#certificates" class="nav-link" data-i18n="nav_certificates">Vault</a></li>
+                    <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+
+
+                <button class="btn-icon header-btn" id="theme-toggle-btn" aria-label="Toggle visual theme">
+                    <i class="fa-solid fa-moon dark-icon"></i>
+                    <i class="fa-solid fa-sun light-icon"></i>
+                </button>
+
+                <button class="cmd-palette-trigger-btn" id="cmd-trigger-shortcut" aria-label="Open Command Menu">
+                    <span class="cmd-kbd">Ctrl</span> + <span class="cmd-kbd">K</span>
+                </button>
+
+                <button class="btn-icon mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero-section text-center">
+            <div id="three-canvas-container" class="three-background-canvas" aria-hidden="true"></div>
+            <div class="container hero-content-wrapper">
+                <div class="hero-badge">
+    <i class="fa-solid fa-trophy text-gold"></i> <span data-i18n="hero_badge">+2 Computer Science Student</span>
+</div>
+<h1 class="hero-title">
+    <span data-i18n="hero_title_greet">Hi, I am</span> <span class="text-gradient">Prabin Kandel</span>
+</h1>
+<p class="hero-subtitle" data-i18n="hero_subtitle">
+    +2 Computer Science Student & Frontend Developer. Fusing computational theory with elegant engineering to build interactive systems.
+</p>
+<div class="hero-cta-group">
+    <a href="#contact" class="btn btn-primary" data-i18n="cta_contact">Get In Touch</a>
+    <a href="#expo" class="btn btn-secondary" data-i18n="cta_view_vault">View Winning Project</a>
+</div>
+
+            </div>
+            <div class="scroll-indicator-arrow">
+                <a href="#about" aria-label="Scroll to content"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <section id="about" class="section-padding section-border-top">
+            <div class="container grid-2-col alignment-center">
+                <div class="about-visual-box">
+                    <div class="premium-glass-card identity-card">
+                        <div class="identity-header">
+                            <div class="avatar-placeholder">
+                                <i class="fa-solid fa-user-astronaut"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-name-title">Prabin Kandel</h3>
+                                <p class="card-subtitle-tag" data-i18n="about_tag">Technology Enthusiast</p>
+                            </div>
+                        </div>
+                        <ul class="identity-details-list">
+                            <li><strong><i class="fa-solid fa-calendar-day"></i> <span data-i18n="label_dob">Date of Birth:</span></strong> 25 June 2009 (2066-03-11 BS)</li>
+                            <li><strong><i class="fa-solid fa-location-dot"></i> <span data-i18n="label_location">Location:</span></strong> Pokhara, Ward 23, Kaski, Nepal</li>
+                            <li><strong><i class="fa-solid fa-graduation-cap"></i> <span data-i18n="label_status">Current Status:</span></strong> +2 Computer Science Student</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-textual-box">
+                    <h2 class="section-title" data-i18n="about_title">Driven by Logic, Inspired by Discovery</h2>
+                    <p class="section-paragraph" data-i18n="about_p1">
+                        My fascination with technology spans beyond code implementation. I am deeply interested in systemic architectures, algorithmic problem solving, and interface optimizations. As a Computer Science student currently analyzing computational frameworks, my practical goal is to design functional software applications that bridge the gap between high-level development tools and daily real-world workflows.
+                    </p>
+                    <p class="section-paragraph" data-i18n="about_p2">
+                        Winning a National-level project demonstration confirmed my dedication to development and engineering. I prioritize writing clean syntax, establishing logical UI layouts, and exploring automation pipelines to advance my journey as a future Software Engineer.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="section-padding section-bg-alt">
+            <div class="container">
+                <div class="stats-grid-row" id="stats-counter-grid">
+                    <div class="stat-metric-card">
+                        <div class="stat-number-display"><span class="counter-value" data-target="3.79">0.00</span></div>
+                        <p class="stat-label-text" data-i18n="stat_see_gpa">SEE Grade Point Average (GPA)</p>
+                    </div>
+                    <div class="stat-metric-card">
+                        <div class="stat-number-display"><span class="counter-value" data-target="3.48">0.00</span></div>
+                        <p class="stat-label-text" data-i18n="stat_ble_gpa">BLE Grade Point Average (GPA)</p>
+                    </div>
+                    <div class="stat-metric-card">
+                        <div class="stat-number-display"><span class="counter-value" data-target="1">0</span>st</div>
+                        <p class="stat-label-text" data-i18n="stat_expo_rank">National Science Expo Rank</p>
+                    </div>
+                    <div class="stat-metric-card">
+                        <div class="stat-number-display"><span class="counter-value" data-target="30">0</span>+</div>
+                        <p class="stat-label-text" data-i18n="stat_training_hours">Certified Training Hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-i18n="edu_title">Academic Pathway</h2>
+                <div class="vertical-timeline-container">
+                    
+                    <div class="timeline-block-item left-aligned">
+                        <div class="timeline-marker-dot current-node"></div>
+                        <div class="premium-glass-card timeline-card-content">
+                            <span class="timeline-duration-badge current" data-i18n="edu_time_current">2082 BS - Present</span>
+                            <h3 class="timeline-institution-name">Shree Shitaladevi Community Secondary School</h3>
+                            <h4 class="timeline-degree-title" data-i18n="edu_deg_highschool">Higher Secondary Education (+2)</h4>
+                            <p class="timeline-spec-field"><strong data-i18n="label_specialization">Specialization:</strong> Computer Science</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block-item right-aligned">
+                        <div class="timeline-marker-dot"></div>
+                        <div class="premium-glass-card timeline-card-content">
+                            <span class="timeline-duration-badge">Grade 7 - Grade 10</span>
+                            <h3 class="timeline-institution-name">Shree Siddha Baraha Secondary School</h3>
+                            <h4 class="timeline-degree-title" data-i18n="edu_deg_see">Secondary Education Examination (SEE)</h4>
+                            <p class="timeline-spec-field"><strong>Completed Year:</strong> 2081 BS (2025 AD)</p>
+                            <div class="timeline-academic-score-pill">GPA: 3.79 / 4.00</div>
+                            <h4 class="timeline-degree-title" data-i18n="edu_deg_see">Basic Level Examination (BLE)</h4>
+                            <p class="timeline-spec-field"><strong>Completed Year:</strong> 2079 BS (2022 AD)</p>
+                            <div class="timeline-academic-score-pill">GPA: 3.48 / 4.00</div>
+                            <p class="timeline-conduct-text"><strong>Conduct Evaluation:</strong> Excellent</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-block-item left-aligned">
+                        <div class="timeline-marker-dot"></div>
+                        <div class="premium-glass-card timeline-card-content">
+                            <span class="timeline-duration-badge">Nursery - Grade 6</span>
+                            <h3 class="timeline-institution-name">Shree Janakalyan English Boarding School</h3>
+                            <h4 class="timeline-degree-title" data-i18n="edu_deg_primary">Primary School Education Baseline</h4>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-padding section-bg-alt">
+            <div class="container">
+                <h2 class="section-title text-center" data-i18n="skills_title">Technical & Conceptual Core</h2>
+                <div class="grid-3-col skills-dashboard-layout">
+                    
+                    <div class="premium-glass-card skill-group-card">
+                        <div class="skill-group-header-row">
+                            <i class="fa-solid fa-code skill-group-icon"></i>
+                            <h3 class="skill-group-heading" data-i18n="skill_group_fe">Frontend Foundations</h3>
+                        </div>
+                        <div class="skills-metrics-list-wrapper">
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>HTML5 Semantic Markup</span><span>95%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 95%;"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>CSS3 Modern Layouts (Flex/Grid)</span><span>90%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>JavaScript (ES6+ Logic Programming)</span><span>75%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="premium-glass-card skill-group-card">
+                        <div class="skill-group-header-row">
+                            <i class="fa-solid fa-flask-vial skill-group-icon"></i>
+                            <h3 class="skill-group-heading" data-i18n="skill_group_eng">Engineering & Applied Systems</h3>
+                        </div>
+                        <div class="skills-metrics-list-wrapper">
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>Scientific Project Planning</span><span>90%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>Hardware & Software Integration</span><span>85%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>Technical Documentation & Architecture</span><span>80%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 80%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="premium-glass-card skill-group-card">
+                        <div class="skill-group-header-row">
+                            <i class="fa-solid fa-brain skill-group-icon"></i>
+                            <h3 class="skill-group-heading" data-i18n="skill_group_soft">Certified Core Life Skills</h3>
+                        </div>
+                        <div class="skills-metrics-list-wrapper">
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>Problem Solving & Alternative Resolution</span><span>90%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>Critical & Analytical Thought Processing</span><span>85%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-progress-bar-module">
+                                <div class="skill-title-percentage-row"><span>Stress Management & Team Communications</span><span>85%</span></div>
+                                <div class="track-bg"><div class="fill-bar" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="expo" class="section-padding custom-expo-section-wrapper">
+            <div class="container">
+                <div class="premium-glass-card massive-expo-hero-card">
+                    <div class="expo-card-grid-layout">
+                        <div class="expo-textual-description-side">
+                            <div class="winner-badge-ribbon">
+                                <i class="fa-solid fa-medal ribbon-icon-spin"></i> <span data-i18n="expo_badge_txt">Winner • Open Project Demonstration</span>
+                            </div>
+                            <h2 class="expo-main-title" data-i18n="expo_main_title">3rd National Technical Festival (VECTOR 2082)</h2>
+                            <p class="expo-meta-organizer-info">
+                                <strong>Organized By:</strong> Vector Committee, Institute of Engineering (IOE), Pashchimanchal Campus, Pokhara.
+                            </p>
+                            <p class="expo-narrative-paragraph" data-i18n="expo_story">
+                                Competing in the highly competitive "+2 Category", I secured the absolute Championship Winner position during the National-level exhibition run from the 26th to the 28th of Magh, 2082 BS. The project evaluated advanced implementations of technology, hardware control automation, and strategic analytical design. Facing technical evaluation by senior Institute of Engineering professors, my functional prototype was awarded top honors for its processing architecture and structural optimization.
+                            </p>
+                            <div class="expo-milestones-row">
+                                <div class="milestone-data-point">
+                                    <div class="milestone-data-label" data-i18n="expo_lbl_timeline">Timeline Duration</div>
+                                    <div class="milestone-data-value">Magh 26 - 28, 2082</div>
+                                </div>
+                                <div class="milestone-data-point">
+                                    <div class="milestone-data-label" data-i18n="expo_lbl_scope">Competition Scope</div>
+                                    <div class="milestone-data-value" data-i18n="expo_val_scope">National Level Entry</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expo-graphic-showcase-side">
+                            <div class="expo-certificate-mock-frame" id="trigger-expo-cert-view">
+                                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'><rect width='100%25' height='100%25' fill='%23111216'/><text x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23707580' font-family='sans-serif' font-size='16'>Loading Vector Winner Certificate...</text></svg>" data-src="img/IMG_20260531_121307.jpg" alt="Vector Achievement Certificate Documentation" class="lazy-image border-radius-sm">
+                                <div class="frame-overlay-indicator"><i class="fa-solid fa-expand-arrows-alt"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <div class="section-header-flex">
+                    <div>
+                        <h2 class="section-title" data-i18n="proj_title">Technical Framework Deployment</h2>
+                        <p class="section-subtitle-text" data-i18n="proj_subtitle">Actual verified digital code implementations and technology deployments.</p>
+                    </div>
+                </div>
+                <div class="grid-2-col general-projects-grid-layout" id="dynamic-projects-target-box">
+                    <div class="premium-glass-card project-display-card skeleton-loading-card">
+                        <div class="skeleton-element line-header"></div>
+                        <div class="skeleton-element line-body"></div>
+                    </div>
+                    <div class="premium-glass-card project-display-card skeleton-loading-card">
+                        <div class="skeleton-element line-header"></div>
+                        <div class="skeleton-element line-body"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="section-padding section-bg-alt">
+            <div class="container">
+                <div class="section-header-centered-layout text-center">
+                    <h2 class="section-title" data-i18n="cert_title">Verified Credentials Vault</h2>
+                    <p class="section-subtitle-text" data-i18n="cert_subtitle">Authentic academic, competition, training, and institutional recognition records.</p>
+                    
+                    <div class="vault-filtering-control-panel-wrapper">
+                        <div class="search-input-field-container">
+                            <i class="fa-solid fa-magnifying-glass field-inner-search-icon"></i>
+                            <input type="text" id="vault-search-input" placeholder="Search certificates by title, organization, topic..." aria-label="Search certificates input field">
+                        </div>
+                        <div class="filter-buttons-row-group" role="tablist" aria-label="Certificate categories filter">
+                            <button class="filter-tab-btn active" data-filter-target="all" role="tab" aria-selected="true" data-i18n="filter_all">All Credentials</button>
+                            <button class="filter-tab-btn" data-filter-target="academic" role="tab" aria-selected="false" data-i18n="filter_academic">Academic</button>
+                            <button class="filter-tab-btn" data-filter-target="competition" role="tab" aria-selected="false" data-i18n="filter_competition">Competitions</button>
+                            <button class="filter-tab-btn" data-filter-target="training" role="tab" aria-selected="false" data-i18n="filter_training">Workshops & Training</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-3-col dynamic-vault-grid-layout" id="certificates-injection-grid-box">
+                    </div>
+            </div>
+        </section>
+
+        <section id="awards" class="section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-i18n="awards_title">Physical Honors Wall</h2>
+                <p class="section-subtitle-text text-center" data-i18n="awards_subtitle">Tangible recognition assets, medals, and tokens achieved over competitive environments.</p>
+                
+                <div class="premium-glass-card physical-awards-gallery-hero-block">
+                    <div class="grid-2-col alignment-center">
+                        <div class="awards-image-showcase-container" id="trigger-medals-lightbox">
+                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'><rect width='100%25' height='100%25' fill='%23111216'/></svg>" data-src="img/1.jfif" alt="Physical Medals and Achievement Showcase Wall Display" class="lazy-image structural-main-awards-img">
+                            <div class="frame-overlay-indicator"><i class="fa-solid fa-expand-arrows-alt"></i> <span data-i18n="lbl_zoom_view">Expand Physical Wall</span></div>
+                        </div>
+                        <div class="awards-descriptive-context-list-box">
+                            <h3 class="awards-list-box-heading-title" data-i18n="awards_list_heading">Honors Manifest</h3>
+                            <ul class="verified-achievements-bullet-timeline">
+                                <li>
+                                    <div class="bullet-node-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                    <div>
+                                        <h4 class="bullet-title">Vector National Expo Gold Medal</h4>
+                                        <p class="bullet-desc">Awarded for securing 1st place in the open project demonstration at IOE Pashchimanchal Campus.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bullet-node-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                    <div>
+                                        <h4 class="bullet-title">Lions Club Inter-School Quiz Silver Medal</h4>
+                                        <p class="bullet-desc">Secured Second place across regional secondary institutions in high-velocity quiz contests.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bullet-node-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                    <div>
+                                        <h4 class="bullet-title">ANNFSU Academic Quiz Recognition</h4>
+                                        <p class="bullet-desc">Honored for group representation and academic problem solving in community quiz modules.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section-padding section-bg-alt">
+            <div class="container">
+                <div class="text-center section-headers-group">
+                    <h2 class="section-title" data-i18n="gallery_title">Activity & Context Gallery</h2>
+                    <p class="section-subtitle-text" data-i18n="gallery_subtitle">Visual documentation of academic projects, institution workshops, and developmental checkpoints.</p>
+                </div>
+                
+                <div class="masonry-gallery-grid-layout" id="personal-photos-masonry-container">
+                    
+                    <div class="masonry-gallery-item-card placeholder-photo-card" data-photo-index="1" tabindex="0">
+                        <div class="inner-placeholder-frame">
+                            <i class="fa-solid fa-camera-retro frame-center-icon"></i>
+                            <span class="placeholder-label-text" data-i18n="photo_placeholder_label">
+                                <img src="img/7.jfif">Vector Science expo - 2082</span>
+                        </div>
+                    </div>
+
+                    <div class="masonry-gallery-item-card placeholder-photo-card" data-photo-index="2" tabindex="0">
+                        <div class="inner-placeholder-frame">
+                            <i class="fa-solid fa-camera-retro frame-center-icon"></i>
+                            <span class="placeholder-label-text" data-i18n="photo_placeholder_label">
+                            <img src="img/3.jfif">Vector Science expo - 2082</span>
+                        </div>
+                    </div>
+
+                    <div class="masonry-gallery-item-card placeholder-photo-card" data-photo-index="3" tabindex="0">
+                        <div class="inner-placeholder-frame">
+                            <i class="fa-solid fa-camera-retro frame-center-icon"></i>
+                            <span class="placeholder-label-text" data-i18n="photo_placeholder_label">
+                            <img src="img/22.jpg">Vector Science expo - 2082<br>Winning time</span>
+                        </div>
+                    </div>
+
+                    <div class="masonry-gallery-item-card placeholder-photo-card" data-photo-index="4" tabindex="0">
+                        <div class="inner-placeholder-frame">
+                            <i class="fa-solid fa-camera-retro frame-center-icon"></i>
+                            <span class="placeholder-label-text" data-i18n="photo_placeholder_label">
+                            <img src="img/66.jpg">Travelling</span>
+                        </div>
+                    </div>
+
+                    <div class="masonry-gallery-item-card placeholder-photo-card" data-photo-index="5" tabindex="0">
+                        <div class="inner-placeholder-frame">
+                            <i class="fa-solid fa-camera-retro frame-center-icon"></i>
+                            <span class="placeholder-label-text" data-i18n="photo_placeholder_label">
+                            <img src="img/4.jfif">Cafe Time</span>
+                        </div>
+                    </div>
+
+                    <div class="masonry-gallery-item-card placeholder-photo-card" data-photo-index="6" tabindex="0">
+                        <div class="inner-placeholder-frame">
+                            <i class="fa-solid fa-camera-retro frame-center-icon"></i>
+                            <span class="placeholder-label-text" data-i18n="photo_placeholder_label">
+                            <img src="img/8.jfif">Understanding the concepts<br>to others</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-i18n="contact_title">Initiate Professional Connection</h2>
+                
+                <div class="grid-2-col placement-top contact-section-grid-layout">
+                    
+                    <div class="contact-channels-info-sidebar">
+                        <p class="section-paragraph" data-i18n="contact_intro">
+                            Have an inquiry regarding upcoming technology deployments, research collaborations, or academic discussions? Reach out directly using the certified operational channels below or through the automated contact form system.
+                        </p>
+
+                        <div class="channel-card-module">
+                            <div class="channel-icon-avatar"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="channel-metadata-fields">
+                                <span class="channel-field-label" data-i18n="lbl_email">Email Channel</span>
+                                <span class="channel-field-value">kandelprabin09@gmail.com</span>
+                            </div>
+                            <button class="btn-icon copy-action-trigger-btn" data-copy-target="kandelprabin09@gmail.com" aria-label="Copy Email address"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+
+                        <div class="channel-card-module">
+                            <div class="channel-icon-avatar"><i class="fa-solid fa-phone"></i></div>
+                            <div class="channel-metadata-fields">
+                                <span class="channel-field-label" data-i18n="lbl_phone">Mobile / WhatsApp</span>
+                                <span class="channel-field-value">+977 9845513093</span>
+                            </div>
+                            <button class="btn-icon copy-action-trigger-btn" data-copy-target="9845513093" aria-label="Copy Phone number"><i class="fa-regular fa-copy"></i></button>
+                        </div>
+
+                        <div class="map-integration-container-card">
+                            <div class="map-header-bar-meta">
+                                <span><i class="fa-solid fa-earth-asia"></i> Pokhara-23, Kaski, Nepal</span>
+                            </div>
+                            <div id="interactive-gis-map-root" class="gis-map-render-frame" data-lat="28.248137" data-lng="83.880585">
+                                <noscript><p>Please enable JavaScript to load the interactive geographic operational marker location.</p></noscript>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="premium-glass-card communication-form-wrapper-box">
+                        <form id="portfolio-interactive-contact-form" autocomplete="on">
+                            <div class="form-input-group-row">
+                                <label for="form-sender-fullname" class="field-label-text" data-i18n="form_lbl_name">Full Identity / Organization Name *</label>
+                                <input type="text" id="form-sender-fullname" name="user_name" required placeholder="Your-Full Name" class="form-control-input">
+                            </div>
+                            
+                            <div class="form-input-group-row">
+                                <label for="form-sender-email" class="field-label-text" data-i18n="form_lbl_email">Communication Email Address *</label>
+                                <input type="email" id="form-sender-email" name="user_email" required placeholder="name@example.com" class="form-control-input">
+                            </div>
+
+                            <div class="form-input-group-row">
+                                <label for="form-sender-subject" class="field-label-text" data-i18n="form_lbl_subject">Subject Matter Context *</label>
+                                <input type="text" id="form-sender-subject" name="msg_subject" required placeholder="Project Collaboration Request" class="form-control-input">
+                            </div>
+
+                            <div class="form-input-group-row">
+                                <label for="form-sender-message" class="field-label-text" data-i18n="form_lbl_msg">Message Content Core Statement *</label>
+                                <textarea id="form-sender-message" name="message_content" required placeholder="Outline the primary core context here..." rows="6" class="form-control-textarea"></textarea>
+                            </div>
+
+                            <div id="form-system-feedback-msg" class="form-feedback-log-box hide" role="status" aria-live="polite"></div>
+
+                            <button type="submit" class="btn btn-primary btn-block send-submit-form-btn" id="submit-form-action-btn">
+                                <span class="btn-text-content" data-i18n="form_btn_send">Submit Message</span>
+                                <span class="btn-spinner-icon-load hide"><i class="fa-solid fa-spinner fa-spin"></i></span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer-block section-border-top">
+        <div class="container">
+            <div class="footer-top-split-layout">
+                <div class="brand-footer-summary-column">
+                    <span class="logo-text">PRABIN KANDEL<span class="logo-dot">.</span></span>
+                    <p class="footer-short-summary-para" data-i18n="footer_summary">Developing modern responsive software systems, studying structural computer science design practices, and designing digital automation assets.</p>
+                </div>
+                <div class="footer-social-networks-link-group">
+                    <a href="https://www.facebook.com/prabinkandel123" target="_blank" rel="noopener noreferrer" class="btn-icon social-net-link" aria-label="Connect via Facebook profile channel"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/Prabin369" target="_blank" rel="noopener noreferrer" class="btn-icon social-net-link" aria-label="Analyze open source repositories on GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://wa.me/9779845513093" target="_blank" rel="noopener noreferrer" class="btn-icon social-net-link" aria-label="Open immediate communication over WhatsApp secure line"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-copyright-meta-row">
+                <p class="copyright-legal-text" >&copy; <span id="current-rendered-year">2026</span> Prabin Kandel. All Rights Reserved.</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top-floating-btn" class="btn-icon scroll-to-top-btn hidden-state" aria-label="Scroll immediately to top of page document layout">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div class="ai-assistant-floating-chat-shell-window minimized" id="ai-chat-assistant-root-container">
+        <button class="ai-assistant-toggle-trigger-badge" id="ai-assistant-trigger-toggle-element" aria-label="Open AI Knowledge Assistant Interface">
+            <i class="fa-solid fa-robot normal-bot-icon"></i>
+            <i class="fa-solid fa-times close-bot-icon"></i>
+            <span class="ai-pulse-glow-indicator"></span>
+        </button>
+
+        <div class="ai-chat-interface-panel-box" role="dialog" aria-label="AI Assistant Interface Panel">
+            <div class="ai-chat-header-bar-meta">
+                <div class="ai-bot-avatar-status-info-row">
+                    <div class="bot-avatar-graphic"><i class="fa-solid fa-microchip"></i></div>
+                    <div>
+                        <h4 class="assistant-name-label">Prabin Kandel AI</h4>
+                        <span class="assistant-online-status-pulse-label"><span class="pulse-dot"></span> Local Engine Active</span>
+                    </div>
+                </div>
+                <button class="btn-icon clear-chat-history-action-btn" id="ai-clear-history-trigger" aria-label="Flush active dialogue logs list history text layout"><i class="fa-solid fa-trash-can"></i></button>
+            </div>
+
+            <div class="ai-chat-scroll-messages-viewport-box" id="ai-chat-messages-viewport-feed">
+                <div class="chat-speech-bubble-row assistant-agent">
+                    <div class="speech-bubble-text-content">
+                        Hello! I am Prabin's AI Assistant. Ask me anything about his education at Shree Shitaladevi, his SEE GPA (3.79), or how he won the National Science Expo at WRC 2082!
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-quick-suggested-prompts-scroller-row" id="ai-quick-prompts-injection-row">
+                <button class="suggested-prompt-pill-btn" data-query="Tell me about the National Science Expo win.">Science Expo Win</button>
+                <button class="suggested-prompt-pill-btn" data-query="What was Prabin's SEE academic record score?">SEE Academic Score</button>
+                <button class="suggested-prompt-pill-btn" data-query="What programming skills does Prabin have?">Technical Core Skills</button>
+            </div>
+
+            <form id="ai-assistant-message-input-form-engine" class="ai-chat-input-action-bar-form">
+                <input type="text" id="ai-assistant-text-input-field" placeholder="Type an inquiry query statement..." autocomplete="off" aria-label="Type inquiry parameter box input data field">
+                <button type="submit" class="btn-icon ai-message-submit-dispatch-btn" id="ai-message-dispatch-trigger" aria-label="Submit message text value parameter data"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="command-palette-backdrop-modal-overlay-container hidden-state" id="global-command-palette-modal-root" role="dialog" aria-modal="true" aria-label="Global navigation command menu palette panel console">
+        <div class="command-palette-inner-dialog-box">
+            <div class="palette-input-search-header-row">
+                <i class="fa-solid fa-terminal console-prompt-prefix-icon"></i>
+                <input type="text" id="command-palette-search-query-field" placeholder="Type a command keyword or navigation shortcut destination link..." aria-label="Command search query text data argument input box line tool" autocomplete="off">
+                <button class="palette-close-escape-action-btn" id="command-palette-close-trigger-btn" aria-label="Close command search menu interface palette console screen view layout element"><kbd>ESC</kbd></button>
+            </div>
+            
+            <div class="palette-results-scroller-viewport-wrapper" id="command-palette-dynamic-results-box">
+                <div class="palette-results-category-group">
+                    <div class="category-group-header-label" data-i18n="cmd_cat_nav">Navigation Shortcuts</div>
+                    <ul class="category-actions-list-nodes-group">
+                        <li class="palette-action-item-row-node" data-action-type="navigate" data-action-target="#about">
+                            <span class="action-title-left-side"><i class="fa-regular fa-compass item-icon"></i> <span data-i18n="cmd_nav_about">Jump to About Identity Description</span></span>
+                            <span class="action-badge-shortcut-right-side" data-i18n="cmd_lbl_go">Go</span>
+                        </li>
+                        <li class="palette-action-item-row-node" data-action-type="navigate" data-action-target="#education">
+                            <span class="action-title-left-side"><i class="fa-solid fa-graduation-cap item-icon"></i> <span data-i18n="cmd_nav_edu">Jump to Academic Education Timeline Path</span></span>
+                            <span class="action-badge-shortcut-right-side" data-i18n="cmd_lbl_go">Go</span>
+                        </li>
+                        <li class="palette-action-item-row-node" data-action-type="navigate" data-action-target="#expo">
+                            <span class="action-title-left-side"><i class="fa-solid fa-trophy item-icon"></i> <span data-i18n="cmd_nav_expo">Jump to Vector National Science Expo Case Study</span></span>
+                            <span class="action-badge-shortcut-right-side" data-i18n="cmd_lbl_go">Go</span>
+                        </li>
+                        <li class="palette-action-item-row-node" data-action-type="navigate" data-action-target="#certificates">
+                            <span class="action-title-left-side"><i class="fa-solid fa-vault item-icon"></i> <span data-i18n="cmd_nav_vault">Open Verified Academic Credentials Vault</span></span>
+                            <span class="action-badge-shortcut-right-side" data-i18n="cmd_lbl_go">Go</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="palette-results-category-group">
+                    <div class="category-group-header-label" data-i18n="cmd_cat_util">System Utilities Commands</div>
+                    <ul class="category-actions-list-nodes-group">
+                        <li class="palette-action-item-row-node" data-action-type="utility" data-action-target="toggle-theme">
+                            <span class="action-title-left-side"><i class="fa-solid fa-circle-half-stroke item-icon"></i> <span data-i18n="cmd_util_theme">Switch Layout Interface Presentation Visual Theme (Dark/Light)</span></span>
+                            <span class="action-badge-shortcut-right-side">Toggle</span>
+                        </li>
+                        <li class="palette-action-item-row-node" data-action-type="utility" data-action-target="clear-chat">
+                            <span class="action-title-left-side"><i class="fa-solid fa-broom item-icon"></i> <span data-i18n="cmd_util_clear">Flush Local AI Chat History Logs Stream Data</span></span>
+                            <span class="action-badge-shortcut-right-side">Reset</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="global-system-lightbox-modal-viewer" class="lightbox-viewer-backdrop-modal-overlay hidden-state" role="dialog" aria-modal="true" aria-label="System image assets full screen lightbox layout visualization window modal">
+        <button class="lightbox-close-action-trigger-btn" id="lightbox-close-modal-trigger" aria-label="Dismiss fullscreen viewing window frame layout visualization modal component"><i class="fa-solid fa-xmark"></i></button>
+        <div class="lightbox-main-content-display-stage-viewport-box">
+            <img id="lightbox-target-image-render-node" src="" alt="Active visualization source image snapshot documentation canvas layout frame asset display">
+        </div>
+ <div class="lightbox-footer-caption-text-bar-meta" id="lightbox-caption-meta-text-target-string">Active Asset Snapshot Title Log String</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+      (function(){
+         emailjs.init("31XMK4CNmoe9w-OXY"); // Public API Key initialization
+      })();
+    </script>
+
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/certificates.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/ai.js"></script>
+    <script src="js/three-scene.js"></script>
+</body>
+</html>
+
+</body>
+</html>

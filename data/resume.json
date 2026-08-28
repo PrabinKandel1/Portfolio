@@ -1,0 +1,34 @@
+{
+  "name": "Prabin Kandel",
+  "title": "Frontend Developer & +2 Computer Science Student",
+  "contact": {
+    "email": "prabin.kandel@example.com",
+    "phone": "+977-XXXXXXXXXX",
+    "location": "Pokhara, Nepal",
+    "github": "github.com/Prabin369"
+  },
+  "education": [
+    {
+      "institution": "Shree Shitaladevi Community Secondary School",
+      "degree": "+2 Computer Science",
+      "duration": "Present"
+    },
+    {
+      "institution": "Shree Siddhabaraha Secondary School",
+      "degree": "SEE (3.79 GPA)",
+      "duration": "Completed 2081 BS"
+    }
+  ],
+  "skills": ["JavaScript (ES6+)", "HTML5/CSS3", "React Ecosystem", "Tailwind CSS", "UI/UX Architecture"],
+  "achievements": [
+    "1st Place - National Science Expo (+2 Open Project Demonstration) - Vector 2082",
+    "2nd Place - Lions Club Inter-School Quiz Contest"
+  ],
+  "projects": [
+    {
+      "name": "Automated Prototype System",
+      "description": "Hardware/software integration project securing 1st place at IOE Pashchimanchal.",
+      "tech": ["C++", "JavaScript", "Microcontrollers"]
+    }
+  ]
+}
