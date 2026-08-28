@@ -1,2 +1,3 @@
 # Portfolio
-This is my first webiste . I make this webiste as my portfolio and all the information in my website are true and original.
+
+My personal portfolio website, built to showcase my skills, projects, experience, and achievements. All information presented on the website is authentic and reflects my actual work, learning journey, and development progress.
